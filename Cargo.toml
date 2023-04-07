@@ -1,0 +1,14 @@
+[package]
+name = "real_estate_project"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+near-sdk = "4.1.1"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[features]
+default = ["near-sdk/default"]
